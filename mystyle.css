@@ -1,0 +1,145 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@100;400;700&family=Special+Elite&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+p{
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h2,h3,h4{
+    text-transform: uppercase;
+    color: white;
+}
+/*utilities*/
+
+/*navigation*/
+nav.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    padding: 5px 20px;
+}
+nav.menu img{
+    height: 32px;
+}
+img.natgeo-frame{
+
+}
+img.natgeo-logo{
+    display: none;
+}
+a.login-link{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-right: 25px;
+}
+a.search-link{
+    display: none;
+}
+a.news-link{
+    display: none;
+}
+a.subs-link{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-right: 25px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+a.menu-link span{
+    display: none;
+    
+}
+/*header*/
+header{
+    height: 250px;
+    color: white;
+    
+}
+p.title{
+    text-align: center;
+    padding-top: 3.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+p.description{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    font-weight: lighter;    
+}
+p.description span{
+    margin: 0;
+    border-bottom: 2px solid gold;
+    color: white;  
+}
+div.border{
+    margin-top: 1.5rem;
+    margin-left: 48%;
+    width: 1.8rem;  
+    border-top: 4px solid gold;
+}
+
+/*main*/
+
+.main-news{
+    display: block;   
+    background-image: url(/img/main-news.webp);
+    background: black;
+    margin-top: -0.5rem;
+    padding: 1rem;
+}
+/*.main-news img{
+    height: 435;
+    width: 500;
+}
+/*
+img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}*/
+.main-news h3{
+    position: absolute;
+    bottom: 62%;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+}
+.main-news p{
+    position: absolute;
+    padding-right: 10%;
+    bottom: 52%;
+    padding-left: 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+} 
+.main-news h4{
+    position: absolute;
+    bottom: 8%;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+}

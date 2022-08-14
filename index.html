@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyle.css">
     <title>my NatGeo</title>
 </head>
 <body>
-    <nav>
+    <nav class="menu">
         
-        <img src="/img/ng-border.png" alt="Nat Geo border">
-        <img src="/img/ng-logo-2fl.webp" alt="Nat Geo">
-        <a href="#" class="login-link">Login</a>
-        <a href="#" class="search-link"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#" class="news-link">Newsletters</a>
-        <a href="#" class="subs-link">Subscribe</a>
-        <a href="#" class="menu-link">Menu <i class="fa-solid fa-angles-down"></i></a>
+        <img class="natgao-frame" src="/img/ng-border.png" alt="Nat Geo border">
+        <img class="natgeo-logo" src="/img/ng-logo-2fl.webp" alt="Nat Geo">
+
+        <div>
+            <a href="#" class="login-link">Login</a>
+            <a href="#" class="search-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="news-link">Newsletters</a>
+            <a href="#" class="subs-link">Subscribe</a>
+            <a href="#" class="menu-link"><span>Menu</span> <i class="fa-solid fa-angles-down"></i></a>
+        </div>  
     </nav>
     <header>
         <p class="title">Latest Stories</p>
@@ -25,26 +29,30 @@
     </header>
 
     <main>
+        
         <section class="main-news">
+            <div class="main-news-sub">
             <img src="img/main-news.webp" alt="">
             <h3>History & Culture</h3>
             <p>These border villages still struggle 75 years after Partition</p>
             <h4><i class="fa-solid fa-bars"></i>Read</h4>
+            </div>
         </section>
+        
         <!-- end of main news -->
 
         <section class="secondary-news">
             <img src="/img/secondary-news.jpeg" alt="">
             <h3>History magazine</h3>
             <p>Who wrote the Dead Sea scrolls? Since may have the answer</p>
-            <h4>Read</h4>
+            <h4><i class="fa-solid fa-bars"></i>Read</h4>
         </section>
 
         <section class="secondary-news">
             <img src="/img/secondary-news-magazine.webp" alt="">
             <h3>Magazine</h3>
             <p>Cox's Bazar, known as a refugee camp, is also a vacation site</p>
-            <h4>Read</h4>
+            <h4><i class="fa-solid fa-bars"></i>Read</h4>
         </section>
     </main>
     <section class="todays-picks">
