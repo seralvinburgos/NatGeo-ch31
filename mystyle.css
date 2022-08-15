@@ -65,20 +65,15 @@ a.subs-link{
     color: white;
     padding: 15px;
 }
-a.subs-link:hover{
-    background-image: linear-gradient(to right, black, gold);
-    color: black;
-
-}
 a.menu-link span{
-    display: none;
-    
+    display: none;   
 }
+
 /*header*/
+
 header{
     height: 250px;
-    color: white;
-    
+    color: white; 
 }
 p.title{
     text-align: center;
@@ -150,7 +145,6 @@ div.border{
     width: 90%;
     margin: 1rem;
     margin-top: 1.5rem;
-    border: 2px solid white;
 }
 .second-news h3{
     position: absolute;
@@ -176,18 +170,17 @@ div.border{
 
 .third-news{
     background: url(/img/third-news.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 32vh;   
     position: relative;
     width: 90%;
     margin: 1rem;
     margin-top: 1.5rem;
-    border: 2px solid white;
 }
 .third-news h3{
     position: absolute;
-    bottom: 8.5rem;
+    bottom: 13rem;
     padding-left: 1rem;
     font-size: 11px;
     letter-spacing: 3px;
@@ -196,14 +189,164 @@ div.border{
     position: absolute;
     bottom: 4.2rem;
     padding-left: 1rem;
-    font-size: 20px;
+    font-size: 38px;
     letter-spacing: 2px;
 }
 .third-news .third-read{
     position: absolute;
-    bottom: 0.7rem;
+    bottom: 1.5rem;
     padding-left: 1rem;
     font-size: 14px;
     letter-spacing: 3px;
 }
-  
+/* end of main */
+
+/* today's picks section */
+
+.todays-picks h2{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 2.5rem;
+    padding-left: 2rem;
+    font-size: 32px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    border-left: 5px solid gold;
+}
+
+.pick-element-1 img{
+    width: 5.5rem;
+    min-height: 5vh;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;   
+}
+.pick-element-1 .head-pick1{
+    margin: 0.7rem;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.pick-element-1 .head-pick1 span{
+    font-weight: 300;
+}
+.pick-element-1 p{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.pick-element-2 img{
+    width: 5.5rem;
+    min-height: 5vh;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}  
+.pick-element-2 h3{
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.pick-element-2 p{
+    margin: 0.7rem;
+    margin-bottom: 3.5rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.pick-element-3 img{
+    height: 90px;
+    width: 5.5rem;
+    min-height: 5vh;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}  
+.pick-element-3 h3{
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.pick-element-3 p{
+    margin: 0.7rem;
+    margin-bottom: 3.5rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.pick-element-4 img{
+    width: 5.5rem;
+    min-height: 5vh;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}  
+.pick-element-4 h3{
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.pick-element-4 p{
+    margin: 0.7rem;
+    margin-bottom: 3.5rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.pick-element-5 img{
+    height: 90px;
+    width: 5.5rem;
+    min-height: 5vh;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}  
+.pick-element-5 h3{
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.pick-element-5 p{
+    margin: 0.7rem;
+    margin-bottom: 3.5rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.pick-element-6 img{
+    width: 5.5rem;
+    min-height: 5vh;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}  
+.pick-element-6 h3{
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.pick-element-6 p{
+    margin: 0.7rem;
+    margin-bottom: 3rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+/* end of today's picks */
+
+.see-more{
+    position: absolute;
+    min-height: 5vh;
+    margin-top: 2.5rem;
+    margin-left: 40%;
+    text-align: center;   
+}
+.see-more h2{
+    font-size: 13px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid gold;
+}
