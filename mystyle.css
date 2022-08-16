@@ -22,9 +22,17 @@ h2,h3,h4{
     text-transform: uppercase;
     color: white;
 }
+
 /*utilities*/
 
+.container{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*navigation*/
+
 nav.menu{
     display: flex;
     justify-content: space-between;
@@ -89,7 +97,8 @@ p.description{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
-    font-weight: lighter;    
+    font-weight: lighter;  
+    letter-spacing: 1px;  
 }
 p.description span{
     margin: 0;
@@ -105,100 +114,131 @@ div.border{
 
 /*main*/
 
+.main-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .main-news{
-    background: url(/img/main-news.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 29vh;   
     position: relative;
-    width: 90%;
-    margin: 1rem;
+    overflow: hidden;
 }
-.main-news h3{
+.main-news-img{
+
+}
+.main-news:hover img{
+    transition: 00.2s ease;
+    transform: scale(1.1);
+}
+.main-news-text{
     position: absolute;
-    bottom: 13rem;
-    padding-left: 1rem;
-    font-size: 11px;
+    top: 220px;
+    left: 30px;
+    color: white;
+}
+.main-news-text h3{
+    font-size: 12px;
     letter-spacing: 3px;
+    margin-bottom: 1rem;   
 }
-.main-news p{
-    position: absolute;
-    bottom: 4.2rem;
-    padding-left: 1rem;
+.main-news-text p{
     font-size: 38px;
+    font-weight: bold;
     letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
-.main-news .main-read{
-    position: absolute;
-    bottom: 1.5rem;
-    padding-left: 1rem;
-    font-size: 14px;
+.main-news-text h4{
+    font-size: 12px;
     letter-spacing: 3px;
-}
-  
-.second-news{
-    background: url(/img/second-news.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 32vh;   
-    position: relative;
-    width: 90%;
-    margin: 1rem;
-    margin-top: 1.5rem;
-}
-.second-news h3{
-    position: absolute;
-    bottom: 8.5rem;
-    padding-left: 1rem;
-    font-size: 11px;
-    letter-spacing: 3px;
-}
-.second-news p{
-    position: absolute;
-    bottom: 4.2rem;
-    padding-left: 1rem;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-.second-news .second-read{
-    position: absolute;
-    bottom: 0.7rem;
-    padding-left: 1rem;
-    font-size: 14px;
-    letter-spacing: 3px;
+    font-weight: bold;
 }
 
-.third-news{
-    background: url(/img/third-news.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 32vh;   
+/*secondary news*/
+
+.second-news{
     position: relative;
-    width: 90%;
-    margin: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
-.third-news h3{
-    position: absolute;
-    bottom: 13rem;
-    padding-left: 1rem;
-    font-size: 11px;
+.second-news-img{
+    max-height: 320px;
+}
+.second-news:hover img{
+    border-bottom: 5px solid gold;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+.second-news-text{
+    background-color: white;
+    height: 180px;
+    padding: 20px;
+    margin-top: 10px;
+}
+.second-news-text h3{
+    font-size: 12px;
     letter-spacing: 3px;
+    color: gray;
+    margin-top: 2rem;
+    margin-bottom: 20px;
 }
-.third-news p{
-    position: absolute;
-    bottom: 4.2rem;
-    padding-left: 1rem;
-    font-size: 38px;
+.second-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.second-news-text p{
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: bold;
     letter-spacing: 2px;
+    color: black;
 }
-.third-news .third-read{
-    position: absolute;
-    bottom: 1.5rem;
-    padding-left: 1rem;
-    font-size: 14px;
+.second-news-text h4{
+    margin-top: 2rem;
+    font-size: 12px;
     letter-spacing: 3px;
+    color: black;
 }
+
+/*third news*/
+
+.third-news{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.third-news-img{
+    height: 450px;
+}
+.third-news:hover img{
+    transition: 00.2s ease;
+    transform: scale(1.1);
+}
+.third-news-text{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    color: white;
+}
+.third-news-text h3{
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;  
+}
+.third-news-text p{
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.third-news-text h4{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
 /* end of main */
 
 /* today's picks section */
@@ -213,129 +253,36 @@ div.border{
     font-weight: 600;
     border-left: 5px solid gold;
 }
-
-.pick-element-1 img{
-    width: 5.5rem;
-    min-height: 5vh;
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;   
+.pick-element{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
-.pick-element-1 .head-pick1{
-    margin: 0.7rem;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 3px;
+.pick-element-img{
+    max-height: 90px;
+    max-width: 90px;
+    object-fit: scale-down;
+    overflow: hidden;  
 }
-.pick-element-1 .head-pick1 span{
+.pick-element-text p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.pick-element-text{
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+.pick-element-text span{
     font-weight: 300;
 }
-.pick-element-1 p{
-    letter-spacing: 1px;
-    font-size: 15px;
+.pick-element-text h3{
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 9px;
 }
 
-.pick-element-2 img{
-    width: 5.5rem;
-    min-height: 5vh;
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}  
-.pick-element-2 h3{
-    margin-left: 1rem;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-.pick-element-2 p{
-    margin: 0.7rem;
-    margin-bottom: 3.5rem;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.pick-element-3 img{
-    height: 90px;
-    width: 5.5rem;
-    min-height: 5vh;
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}  
-.pick-element-3 h3{
-    margin-left: 1rem;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-.pick-element-3 p{
-    margin: 0.7rem;
-    margin-bottom: 3.5rem;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.pick-element-4 img{
-    width: 5.5rem;
-    min-height: 5vh;
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}  
-.pick-element-4 h3{
-    margin-left: 1rem;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-.pick-element-4 p{
-    margin: 0.7rem;
-    margin-bottom: 3.5rem;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.pick-element-5 img{
-    height: 90px;
-    width: 5.5rem;
-    min-height: 5vh;
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}  
-.pick-element-5 h3{
-    margin-left: 1rem;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-.pick-element-5 p{
-    margin: 0.7rem;
-    margin-bottom: 3.5rem;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.pick-element-6 img{
-    width: 5.5rem;
-    min-height: 5vh;
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}  
-.pick-element-6 h3{
-    margin-left: 1rem;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-.pick-element-6 p{
-    margin: 0.7rem;
-    margin-bottom: 3rem;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
 /* end of today's picks */
 
 .see-more{
