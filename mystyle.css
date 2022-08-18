@@ -55,7 +55,7 @@ a.login-link{
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 a.search-link{
     display: none;
@@ -134,24 +134,16 @@ p.description{
     font-weight: lighter;  
     letter-spacing: 1px;  
 }
-/*
-p.description span{
-    margin: 0;
-    border-bottom: 2px solid gold;
-    color: white;  
-    cursor: pointer;
-}
-*/
 p.description span{
     padding: 2px 0;
     border-bottom: 2px solid #FFD51C;
     box-shadow: inset 0 0 0 0 #FFD51C;
-    transition: ease-out 0.5s;
+    transition: ease-out 0.5s; 
 }
 
 header p.description span:hover{
     box-shadow: inset  0 -100px 0 0  #FFD51C;
-    color: black
+    color: black;
 }
 div.border{
     margin-top: 1.5rem;
@@ -163,12 +155,8 @@ div.border{
 
 /*main*/
 
-.main-news-text h3:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
 .main-news{
-    position: relative;
+    position: relative;  
     overflow: hidden;
     cursor: pointer;
 }
@@ -179,23 +167,32 @@ div.border{
 
     }
 }
-.main-news-img{
 
-}
 .main-news:hover img{
     transition: 00.2s ease;
     transform: scale(1.1);
 }
+.main-news-img img{
+    height: 430px;
+    min-width: 100%;
+    transition: 0.2s ease-out;
+}
+.main-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .main-news-text{
     position: absolute;
-    top: 220px;
+    top: 120px;
     left: 30px;
     color: white;
 }
 .main-news-text h3{
+    margin-top: 100px;
+    margin-bottom: 7px;
     font-size: 12px;
     letter-spacing: 3px;
-    margin-bottom: 1rem;   
+
 }
 .main-news-text p{
     font-size: 38px;
@@ -203,6 +200,7 @@ div.border{
     letter-spacing: 2px;
     line-height: 1.2;
     margin-bottom: 20px;
+
 }
 .main-news-text h4{
     font-size: 12px;
@@ -213,7 +211,6 @@ div.border{
 /*secondary news*/
 
 .second-news{
-    position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
     overflow: hidden;
@@ -222,25 +219,27 @@ div.border{
 @media(min-width:768px){
     
 }
-.second-news-img{
-    max-height: 320px;
-}
 .second-news:hover img{
     border-bottom: 5px solid gold;
     transform: scale(1.1);
     transition: 0.2s ease;
 }
+.second-news-img img{
+    height: 310px;
+    min-width: 100%;
+    transition: 0.2s ease-out;
+    
+}
 .second-news-text{
     background-color: white;
-    height: 180px;
-    padding: 20px;
-    margin-top: 10px;
+    height: 110px;
+    padding: 30px;
+    margin-top: -10px;
 }
 .second-news-text h3{
     font-size: 12px;
     letter-spacing: 3px;
     color: gray;
-    margin-top: 2rem;
     margin-bottom: 20px;
 }
 .second-news-text h3:hover{
@@ -248,57 +247,17 @@ div.border{
     cursor: pointer;
 }
 .second-news-text p{
-    margin-top: 1rem;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
+    margin-bottom: 20px;
     letter-spacing: 2px;
-    color: black;
+    color: rgb(34, 34, 34);
 }
 .second-news-text h4{
-    margin-top: 2rem;
     font-size: 12px;
     letter-spacing: 3px;
+    font-weight: bold;
     color: black;
-}
-
-/*third news*/
-
-.third-news{
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    cursor: pointer;
-}
-.third-news-img{
-    height: 450px;
-}
-.third-news:hover img{
-    transition: 00.2s ease;
-    transform: scale(1.1);
-}
-.third-news-text{
-    position: absolute;
-    top: 220px;
-    left: 30px;
-    color: white;
-}
-.third-news-text h3{
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin-bottom: 1rem;  
-}
-.third-news-text p{
-    font-size: 38px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-.third-news-text h4{
-    font-size: 12px;
-    letter-spacing: 3px;
-    font-weight: bold;
 }
 
 @media(min-width:768px){
@@ -316,6 +275,9 @@ div.border{
     }
     .flex-container-reversed main{
         flex-basis: 50rem;
+    }
+    .flex-container-reversed section{
+        flex-basis: 25rem;
     }
 }
 
@@ -376,3 +338,4 @@ div.border{
     letter-spacing: 3px;
     border-bottom: 2px solid gold;
 }
+
