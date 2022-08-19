@@ -117,6 +117,14 @@ header{
     height: 250px;
     color: white; 
 }
+@media(min-width:768px){
+    header p.title{
+        font-size: 50px;
+    }
+    header p.description{
+        font-size: large;
+    }
+}
 p.title{
     text-align: center;
     padding-top: 3.5rem;
@@ -162,9 +170,7 @@ div.border{
 }
 @media(min-width:768px){
     .main-news-img{
-        position: relative;
-        width: 600px;
-
+        max-width: auto;
     }
 }
 
@@ -217,7 +223,13 @@ div.border{
     cursor: pointer;
 }
 @media(min-width:768px){
-    
+    .second-news-img{
+        height: 320px;
+    }
+    .second-news-text h3{
+        margin-top: -1rem;
+    }
+ 
 }
 .second-news:hover img{
     border-bottom: 5px solid gold;
@@ -263,19 +275,23 @@ div.border{
 @media(min-width:768px){
     .container{
         width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .grid-container{
+        display: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 1rem;
+        column-gap: 1.5rem;
     }
     .flex-container-reversed{
         display: flex;
         flex-direction: row-reverse;
     }
+    
     .flex-container-reversed main{
         flex-basis: 50rem;
-    }
+    } 
     .flex-container-reversed section{
         flex-basis: 25rem;
     }
@@ -294,6 +310,22 @@ div.border{
     letter-spacing: 5px;
     font-weight: 600;
     border-left: 5px solid gold;
+}
+@media(min-width:768px){
+    .todays-picks h2{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 2.5rem;
+        padding-left: 2rem;
+        font-size: 32px;
+        letter-spacing: 5px;
+        font-weight: 600;
+        border-left: 5px solid gold;
+    }
+    .pick-element{
+        margin-left: 1rem;
+        align-items: left;
+    }
 }
 .pick-element{
     display: flex;
@@ -325,17 +357,4 @@ div.border{
     margin-bottom: 9px;
 }
 
-/* end of today's picks */
-
-.see-more{
-    position: absolute;
-    min-height: 5vh;
-    margin-left: 40%;
-    text-align: center;   
-}
-.see-more h2{
-    font-size: 13px;
-    letter-spacing: 3px;
-    border-bottom: 2px solid gold;
-}
 
